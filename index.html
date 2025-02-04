@@ -2,13 +2,11 @@
 <html lang="en">
   <head>
     <script>
-     let importObject = null;
-     WebAssembly.instantiateStreaming(fetch("myModule.wasm"), importObject).then(
-    (results) => {
-      console.log("less go!!")
-    },
-  );
-
+      async function loadWasm(url) {
+        const fetchPromise = fetch(url);
+        const { module, instance } = await WebAssembly.instantiateStreaming(fetchPromise)
+      }
+      loadWasm('./myModule.wasm')
     </script>
   </head>
   <body>
