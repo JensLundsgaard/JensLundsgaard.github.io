@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <script>
-      async function loadWasm(url) {
-        const fetchPromise = fetch(url);
-        const { module, instance } = await WebAssembly.compileStreaming(fetchPromise)
-      }
-      loadWasm('./myModule.wasm')
+      const importObject = {
+        my_namespace: { imported_func: (arg) => console.log(arg) },
+      };
+
+      WebAssembly.compileStreaming(fetch("simple.wasm"))
+      .then((module) => WebAssembly.instantiate(module, importObject))
+      .then((instance) => instance.exports.exported_func());
     </script>
   </head>
   <body>
