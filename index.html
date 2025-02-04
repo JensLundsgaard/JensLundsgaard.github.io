@@ -4,7 +4,7 @@
     <script>
       async function loadWasm(url) {
         const fetchPromise = fetch(url);
-        const { module, instance } = await WebAssembly.instantiateStreaming(fetchPromise)
+        const { module, instance } = await WebAssembly.compileStreaming(fetchPromise)
       }
       loadWasm('./myModule.wasm')
     </script>
