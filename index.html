@@ -2,19 +2,12 @@
 <html lang="en">
   <head>
     <script>
-      WebAssembly.instantiateStreaming(fetch("myModule.wasm"), importObject).then(
-    (obj) => {
-    // Call an exported function:
-    obj.instance.exports.exported_func();
-
-    // or access the buffer contents of an exported memory:
-    const dv = new DataView(obj.instance.exports.memory.buffer);
-
-    // or access the elements of an exported table:
-    const table = obj.instance.exports.table;
-    console.log(table.get(0)());
+     let importObject = null;
+     WebAssembly.instantiateStreaming(fetch("myModule.wasm"), importObject).then(
+    (results) => {
+      console.log("less go!!")
     },
-    );
+  );
 
     </script>
   </head>
