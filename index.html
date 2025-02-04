@@ -6,7 +6,7 @@
         my_namespace: { imported_func: (arg) => console.log(arg) },
       };
 
-      WebAssembly.compileStreaming(fetch("simple.wasm"))
+      WebAssembly.compileStreaming(fetch("myModule.wasm"))
       .then((module) => WebAssembly.instantiate(module, importObject))
       .then((instance) => instance.exports.exported_func());
     </script>
