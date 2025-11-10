@@ -21,20 +21,16 @@ function SkillCategory({ title, skills }: SkillCategoryProps) {
 export default function SkillsPage() {
   const skillCategories = [
     {
-      title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "Java", "C++", "SQL", "HTML/CSS"]
+      title: "Languages",
+      skills: ["Python", "Java", "JavaScript", "HTML", "CSS", "TypeScript", "React", "Rust"]
     },
     {
-      title: "Frameworks & Libraries",
-      skills: ["React", "Node.js", "Express", "Next.js", "TailwindCSS", "PyTorch", "Pandas", "NumPy"]
+      title: "Tools",
+      skills: [ "TensorFlow", "Keras", "PyTorch", "Docker", "Android Studio", "Vim", "Ubuntu Linux", "Visual Studio Code", "Wolfram Mathematica", "Numpy", "Pandas", "Matplotlib", "Tailscale", "SQL" ]
     },
     {
-      title: "Tools & Technologies",
-      skills: ["Git", "Docker", "PostgreSQL", "MongoDB", "AWS", "Linux", "VS Code"]
-    },
-    {
-      title: "Concepts",
-      skills: ["Data Structures", "Algorithms", "Machine Learning", "Web Development", "Database Design", "RESTful APIs"]
+      title: "Skills",
+      skills: [ "Topological Data Analysis", "Dimension Reduction Techniques", "Deep Learning", "Loss Functions", "Database Design"]
     }
   ];
 

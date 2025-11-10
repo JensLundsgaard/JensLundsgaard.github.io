@@ -13,8 +13,7 @@ function ExperienceItem({ title, company, period, location, description }: Exper
         <h3 className="text-xl font-semibold text-white">{title}</h3>
         <p className="text-zinc-400">{company}</p>
         <div className="text-zinc-500 text-sm mt-2">
-          <p>{period}</p>
-          <p>{location}</p>
+          <p>{period}, <b>{location}</b></p>
         </div>
       </div>
       <ul className="list-none text-zinc-300 space-y-2 mt-4">

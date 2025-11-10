@@ -1,8 +1,8 @@
 export default function EducationPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center py-20 px-6">
-      <div className="max-w-4xl text-center">
-        <h2 className="text-4xl font-bold text-white mb-12">Education</h2>
+    <div className="min-h-screen flex items-center justify-center py-20 px-6 gap-1 text-center">
+      <div className="max-w-1xl">
+        <h2 className="text-4xl font-bold text-white mb-12 p-10">Education</h2>
         <div>
           <div className="mb-4">
             <h3 className="text-2xl font-semibold text-white">University of Wisconsin-Madison</h3>
@@ -14,22 +14,12 @@ export default function EducationPage() {
           </div>
           <div className="mt-6 space-y-4">
             <div>
-              <p className="text-zinc-300 font-medium">GPA: 3.8/4.0</p>
-            </div>
-            <div>
-              <p className="text-zinc-400 font-medium mb-2">Relevant Coursework:</p>
-              <div className="flex flex-wrap gap-2 justify-center">
+              <p className="text-zinc-400 font-small mb-2">Relevant Coursework:</p>
+              <div className="flex flex-wrap gap-2 justify-center ">
                 {[
-                  'Data Structures',
-                  'Algorithms',
-                  'Machine Learning',
-                  'Database Systems',
-                  'Operating Systems',
-                  'Web Development',
-                  'Software Engineering',
-                  'Computer Networks'
+                   "Programming II", "Linear Algebra", "Modern Algebra", "Introduction to Databases", "Elementary Topology"
                 ].map((course) => (
-                  <span key={course} className="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">
+                  <span key={course} className="px-5 py-5 bg-zinc-800 text-zinc-300 text-sm p-5">
                     {course}
                   </span>
                 ))}
