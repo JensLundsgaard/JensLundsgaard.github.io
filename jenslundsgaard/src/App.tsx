@@ -9,9 +9,9 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="flex-col min-h-screen bg-black text-white">
       <Header />
-      <main>
+      <main className="flex-col justify-center">
         <Hero />
         <About />
         <Experience />
