@@ -1,12 +1,8 @@
-
-
-import './App.css'
-
+import './index.css';
 function App() {
-
   return (
     <>
-      <div>
+      <div className="root">
         <h1>Hello welcome to my website!!</h1>
       </div>
     </>
