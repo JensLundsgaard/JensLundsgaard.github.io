@@ -1,16 +1,13 @@
 export default function Education() {
   return (
     <section id="education" className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-12">Education</h2>
-        <div className="border-l-2 border-zinc-700 pl-6 relative">
-          <div className="absolute w-3 h-3 bg-zinc-700 rounded-full -left-[7px] top-1.5"></div>
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-            <div>
-              <h3 className="text-2xl font-semibold text-white">University of Wisconsin-Madison</h3>
-              <p className="text-xl text-zinc-400 mt-1">Bachelor of Science in Computer Science</p>
-            </div>
-            <div className="text-zinc-500 text-sm md:text-right mt-2 md:mt-0">
+        <div>
+          <div className="mb-4">
+            <h3 className="text-2xl font-semibold text-white">University of Wisconsin-Madison</h3>
+            <p className="text-xl text-zinc-400 mt-1">Computer Sciences and Mathematics B.S.</p>
+            <div className="text-zinc-500 text-sm mt-2">
               <p>Expected May 2026</p>
               <p>Madison, WI</p>
             </div>
@@ -21,7 +18,7 @@ export default function Education() {
             </div>
             <div>
               <p className="text-zinc-400 font-medium mb-2">Relevant Coursework:</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 {[
                   'Data Structures',
                   'Algorithms',
