@@ -7,7 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 jenslundsgaard/node_modules
-docs
 
 node_modules
 dist
