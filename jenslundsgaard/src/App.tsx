@@ -109,6 +109,12 @@ function App() {
         <br />
         Massachusetts Institute of Technology — <em>October 2026</em>
       </p>
+	<p>
+        <strong>Applied Algebraic Topology Research Network Poster Session</strong>, <code>spinet</code>: Sheaf
+        Protein Inverse Folding Network
+        <br />
+        Virtual — <em>September 2026</em>
+      </p>
       <p>
         <strong>Biophysics Colloquium</strong>, <code>spinet</code>: Sheaf Protein Inverse
         Folding Network
