@@ -8,7 +8,7 @@ function App() {
         224-434-8513 · <a href="mailto:jenslundsgaard7@gmail.com">jenslundsgaard7@gmail.com</a>
         <br />
         
-	<a href="github.com/JensLundsgaard">Github</a> ·{' '} <a href="linkedin.com/in/jens-lundsgaard-13700625b">LinkedIn</a>
+	<a href="https://www.github.com/JensLundsgaard">Github</a> ·{' '} <a href="https://www.linkedin.com/in/jens-lundsgaard-13700625b">LinkedIn</a>
       </p>
 
       <h2>Education</h2>
